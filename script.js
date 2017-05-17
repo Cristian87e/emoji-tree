@@ -1,9 +1,9 @@
 function drawEmojiTree(rows) {
-  const space = '&nbsp;&nbsp;';
+  const space = '&nbsp;&nbsp;'; // Two whitespaces represent the width of one emoji.
   const emoji = '😎';
   let content = '';
-  for (var i = 0; i < rows; i++) {
-    for (var j = (rows - 1); j >= 0; j--) {
+  for (let i = 0; i < rows; i++) {
+    for (let j = (rows - 1); j >= 0; j--) {
       content += (j <= i) ? emoji : space;
     }
     content += '<br />';
